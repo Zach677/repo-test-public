@@ -6,10 +6,10 @@ set -o pipefail
 
 cd "$(dirname "$0")"
 cd ../../
-# if [ ! -f ".root" ]; then
-#     echo "[*] unable to locate project directory"
-#     exit 1
-# fi
+if [ ! -f ".root" ]; then
+    echo "[*] unable to locate project directory"
+    exit 1
+fi
 
 ORIG_DIR=$(pwd)
 TARGET_DIR="/Users/star/Downloads/1/repo-test-public"
