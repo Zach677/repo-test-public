@@ -1,3 +1,4 @@
+# https://github.com/Lakr233/BBackupp/blob/main/Resource/Script/sync.open.source.sh
 #!/bin/bash
 
 set -e
@@ -43,7 +44,7 @@ COMMIT_HASH=$(git rev-parse --short HEAD)
 pushd $TARGET_DIR
 
 PROHIBIT_FILE_LIST=(
-    "repo-test-source"
+    "repo-test-source/"
 )
 
 for file in "${PROHIBIT_FILE_LIST[@]}"; do
